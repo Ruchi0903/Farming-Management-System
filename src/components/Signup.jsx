@@ -18,7 +18,7 @@ const Signup = () => {
     <div>
       <Row>
         <Col sm={{size:6, offset:3}} >
-          <Container >
+          <Container className="container" >
             <Card outline className="Cardcomp">
               <CardHeader>
                 <h3> Fill Information To Register </h3>
@@ -50,21 +50,10 @@ const Signup = () => {
                     />
                   </FormGroup>
 
-                  {/* About Field */}
-                  <FormGroup>
-                    <label for="about">Enter your suggestions </label>
-                    <Input
-                      type="textarea"
-                      id="about"
-                      style={{ height: "250px" }}
-                    />
-                  </FormGroup>
-
-                  <Container>
-                    <Button color="dark">SignUp</Button>
-                    <Button color="secondary" className="ms-2">
-                      Login
-                    </Button>
+                  <Container className="btn-container">
+                    <Button className="btn" color="dark">SignUp</Button>
+                    <h5>Already Signed Up?</h5>
+                    <Button className="btn" color="dark">Login</Button>
                   </Container>
                 </Form>
               </CardBody>
