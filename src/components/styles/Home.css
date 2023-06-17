@@ -19,6 +19,12 @@
     margin-top: 30px;
 }
 
+.form-div >h5{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+/* 
 .form-div >input{
     margin-top: 20px;
     margin-left: 20px;
@@ -27,8 +33,8 @@
 
 .form-div >input:hover{
     /* border-color: rgb(35, 213, 55); */
-    border-color: rgb(17, 211, 192);
-}
+    /* border-color: rgb(17, 211, 192); */
+/* } */
 
 .btn-div{
     margin-right: 60px;
