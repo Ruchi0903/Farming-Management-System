@@ -1,6 +1,8 @@
 .bottomcont >h5{
     padding-bottom: 100%;
-    margin-bottom: -105%;
-    margin-left: 60px;
+    margin-bottom: -100%;
+    margin-left: 10px;
+    margin-right: 10px;
     padding-left: 10px;
+    padding-right: 10px;
 }

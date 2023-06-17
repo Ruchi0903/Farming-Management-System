@@ -10,8 +10,16 @@ import {
   Input,
   Button,
 } from "reactstrap";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const navigate = useNavigate();
+
+  const navigateSignup = () =>{
+    navigate('/signup');
+  }
+
   return (
     <>
       <Container className="container">
@@ -36,9 +44,21 @@ const Login = () => {
               </FormGroup>
 
               {/* Button */}
-              <Button className="btn" color="dark">
-                Login
-              </Button>
+              <div className="btn-div">
+                <Button className="btn" color="dark">
+                  Login
+                </Button>
+
+                  <h5>
+                    Didn't Register?
+                  </h5>
+
+                <Button className="btn" color="dark"
+                onClick={navigateSignup}
+                >
+                  SignUp
+                </Button>
+              </div>
             </Form>
           </CardBody>
         </Card>
