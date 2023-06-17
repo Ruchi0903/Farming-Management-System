@@ -1,7 +1,6 @@
 import React from 'react'
-import './styles/ProductListing.css'
 
-export default function ProductListing() {
+const ProductListing = () => {
   return (
     <>
         <div>
@@ -11,3 +10,5 @@ export default function ProductListing() {
     </>
   )
 }
+
+export default ProductListing
