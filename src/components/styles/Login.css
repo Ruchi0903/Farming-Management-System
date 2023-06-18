@@ -1,0 +1,30 @@
+.top-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
+    width: 100%;
+    height: 600px;
+    /* background: yellow; */
+}
+
+.top-div .username-div label{
+    /* display: flex; */
+    margin-right: 20px;
+}
+
+.username-div p{
+    /* background-color: yellow; */
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.btns-div .signin-btn{
+    background-color: rgb(21, 89, 184);
+    margin-right: 80px;
+}
+
+.btns-div .signin-btn:hover{
+    background-color: rgb(39, 55, 128);
+}
