@@ -1,14 +1,14 @@
 import React from "react";
 import "../components/styles/Login.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="top-div">
-
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-
-            {/* USERNAME */}
+          {/* USERNAME */}
           <div class="username-div mb-4">
             <label
               class="block text-gray-700 text-sm font-bold mb-2"
@@ -24,7 +24,7 @@ const Login = () => {
             />
           </div>
 
-              {/* PASSWORD */}
+          {/* PASSWORD */}
 
           <div class="username-div mb-6">
             <label
@@ -49,7 +49,15 @@ const Login = () => {
               class="signin-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
-              Sign In
+              Log In
+            </button>
+
+            <button
+              class="signin-btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="button"
+              onClick={() => navigate("/signup")}
+            >
+              Sign Up
             </button>
             <a
               class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
@@ -58,10 +66,7 @@ const Login = () => {
               Forgot Password?
             </a>
           </div>
-
-          
         </form>
-
       </div>
     </>
   );

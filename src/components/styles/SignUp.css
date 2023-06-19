@@ -1,0 +1,35 @@
+.top{
+    width: 50%;
+    margin-left: 20%;
+    /* background-color: red; */
+    display: flex;
+    margin-top: 90px;
+}
+
+.container{
+    /* background-color: yellow; */
+}
+
+.inputs-div{
+    background-color: rgb(21, 89, 184);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.inputs-div h1{
+    /* background-color: black; */
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.inputs-div .inputs{
+    margin-bottom: 14px;
+    padding-left: 13px;
+    padding-bottom: 10px;
+    border-radius: 4px 4px 4px 4px;
+}
