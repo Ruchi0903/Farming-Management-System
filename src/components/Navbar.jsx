@@ -1,0 +1,89 @@
+import React, { useState } from "react";
+import "./styles/Navbar.css";
+
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
+
+import { GiHamburgerMenu } from 'react-icons/gi';
+
+const Navbar = () => {
+    const [showMediaIcons, setShowMediaIcons] = useState(false);
+  return (
+    <>
+      <nav className="main-nav">
+        {/* 1st logo part */}
+        <div className="logo">
+          <h2>
+            <span>P</span>izza
+            <span>H</span>ut
+          </h2>
+        </div>
+
+        {/* 2nd menu part */}
+        <div className= {showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Menu</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        {/* 3rd social media links */}
+        <div className="social-media">
+          <ul className="social-media-desktop">
+            <li>
+              <a href="www.facebook.com" target="_blank">
+                <FaFacebookSquare className="facebook" />
+              </a>
+            </li>
+
+            <li>
+              <a href="www.instagram.com" target="_blank">
+                <FaInstagramSquare className="instagram" />
+              </a>
+            </li>
+
+            <li>
+              <a href="www.youtube.com" target="_blank">
+                <FaYoutubeSquare className="youtube" />
+              </a>
+            </li>
+          </ul>
+
+          {/* Hamburger Menu Starts From Here */}
+          <div className="hamburger-menu">
+                <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+                    <GiHamburgerMenu />
+                </a>
+          </div>
+        </div>
+      </nav>
+
+      {/* HERO Section */}
+      <section className="hero-section">
+        <p>Welcome to</p>
+        <h1>Pizza Hut</h1>
+      </section>
+    </>
+  );
+};
+
+export default Navbar;
